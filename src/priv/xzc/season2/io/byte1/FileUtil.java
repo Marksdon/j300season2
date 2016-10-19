@@ -69,5 +69,13 @@ public class FileUtil {
 		is.close();
 	}
 	
+	/**
+	 * review
+	 */
+	public static void copyF(){
+		
+		//循环读写
+		
+	}
 	
 }

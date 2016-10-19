@@ -8,6 +8,12 @@ import java.io.Reader;
 
 /**
  * 读取字符文件
+ * 字符流的操作
+ * reader
+ * writer
+ * bufferreader
+ * bufferwriter
+ * 
  * @author randall
  *
  */
@@ -29,7 +35,6 @@ public class ReadCharStreamDemo1 {
 				String str = new String(cbuf, 0, len);
 				System.out.print(str);
 			}
-
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 			System.out.println("文件不存在");
@@ -51,4 +56,36 @@ public class ReadCharStreamDemo1 {
 
 
 	}
+	
+	
+	
+	
+	
+	
+	public static void readCharD(){
+		
+		//1.建立源
+		File file = new File("/home/randal/char_Do.sh");
+		//2.选择流
+		try {
+			//3.读取
+			Reader reader = new FileReader(file);
+			
+			
+			
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		//4.关闭资源
+		
+	}
+	
+	
+	
+	
+	
+	
 }
